@@ -1,0 +1,78 @@
+body {
+    background: #F9C6BD;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 300;
+}
+
+.info h2 {
+    color: #ff4d4d;
+    font-size: 2.5rem;
+}
+
+.info p {
+    color: white;
+    font-size: 1.15rem;
+    line-height: 2;
+    font-family: 'Open Sans', cursive;
+}
+
+#mainNav {
+    font-family: 'Amatic SC', Arial, Helvetica;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#mainNav .nav-link {
+    color: #ffffff;
+}
+
+#mainNav .nav-link:hover {
+    color: #e8b121;
+}
+
+.navbar .navbar-brand {
+    color: #133b37;
+    font-size: 2.5rem;
+}
+
+#headingGroup span {
+    color: #ff4d4d;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+#footer {
+    background: #ec4424 !important;
+    word-spacing: 30px;
+}
+
+#footer a {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+#footer ul.social li:hover a i {
+	font-size: 3rem;
+    margin-top:-10px;
+    color:#e8b121;
+}
+
+.navbar.scrolled {
+    background: #ec4424;
+    transition: 1s;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+

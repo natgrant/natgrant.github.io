@@ -1,14 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Blog</title>
+  <!--Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="styles/main.css" type="text/css">
+
+  <!--Imported Font-->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans:300,400" rel="stylesheet">
+
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <title>Nat's Blog</title>
+
 </head>
+
 <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p> 
+
+<!--Navigation station-->
+  <nav id="mainNav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+    <a href="index.html" class="navbar-brand">NATCHAT</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle the navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#about-me" class="nav-link">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technical</a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">CSS Concepts</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core</a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sprint 1</a>
+            <a class="dropdown-item" href="#">Sprint 2</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!--Main Content 1-->
+  <section class="container-fluid px-0">
+    <div class="row align-items-center content">
+      <div class="col-lg-6">
+        <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+          <h1 class="">NATALIE<span> // </span>GRANT<h2>
+          <h1 class="">KĀHU<span> // </span>COHORT<h2>
+          <h1 class="">DEV<span> //  </span>ACADEMY</h2>
+        </div>
+      </div>
+      <div class="col-lg-6 px-0 py-0">
+        <img class="img-fluid" src="images/malaysia1.jpg" alt="Street art in Penang">
+      </div>
+    </div>
+  </section>
+
+<!--Main Content 2-->
+  <section class="container-fluid px-0">
+    <div class="row align-items-center content">
+      <div class="col-md-6 px-0 py-0 order-2 order-md-1">
+        <img class="img-fluid" src="images/indo2.jpg" alt="Nat in Northern Lombok">
+      </div>
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 info mb-5 mb-md-0">
+            <h2>HEY THERE I'M NAT!</h2> 
+            <p class="leadText">You've stumbled across my blog (woohoo!) follow me on my journey as I explore the cultural and technical aspects of what it means to be a web developer with Dev Academy and beyond!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Main Content 3-->
+    <a id="about-me"></a>
+    <div class="row align-items-center content">
+      <div class="col-md-6 text-center">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 info mb-5 mb-md-0">
+            <h2>ABOUT ME</h2>
+            <p class="leadText">I'm an avid traveller, and a budding web developer with a love for all things fluffy especially if they purr. Thanks for checking out my blog!</p>
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-6 px-0 py-0">
+        <img class="img-fluid" src="images/philipines3.jpg" alt="The Philippines">
+      </div>
+    </div>
+
+<!--Main Content 4-->
+    <div class="row align-items-center content">
+      <div class="col-md-6 px-0 py-0 order-2 order-md-1">
+        <img class="img-fluid" src="images/Viet1.jpg" alt="Street art in Vietnam">
+      </div>
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 info mb-5 mb-md-0">
+            <h2>WE'RE IN THIS TOGETHER</h2>
+            <p class="leadText">Let's connect - see below for my Social links and follow me on GitHub! Flick me a message me on Facebook if you want to chat more about Dev Academy and your own projects!</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+ 
+<!--Footer-->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com/natalie.grant.94"><i class="fab fa-facebook-square"> </i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/atnatgrant/?hl=en"><i class="fab fa-instagram"> </i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/natgrant"><i class="fab fa-github"> </i></a></li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- jQuery/Popper.js/Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for Navbar Scroll -->
+  <script>
+    $(function () {
+    $(document).scroll(function(){
+    var $nav = $("#mainNav");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+
 </body>
 </html>
