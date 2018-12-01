@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="file:///Users/natalie/workspace/Dev-Academy/natgrant.github.io/styles/main.css" type="text/css">
+
+  <!--Imported Font-->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans:300,400" rel="stylesheet">
+
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <title>CSS Concepts</title>
+
+</head>
+
+<body id="technical-blog">
+
+  <!--Navigation station-->
+  <nav id="mainNav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="https://natgrant.github.io/index.html" class="navbar-brand">NATCHAT</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle the navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="https://natgrant.github.io/index.html#about-me" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technical</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="natgrant.github.io/blog/sprint2-technical.html">CSS Concepts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sprint 1</a>
+              <a class="dropdown-item" href="#">Sprint 2</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <!--Header/Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Let's Get Technical</h1>
+      <p class="lead">Find technical concepts below, explained in a not-so-technical way</p>
+    </div>
+  </div>
+
+  <!--Main content/blog 1-->
+  <main role="main">
+    <div class="container px-0 mb-5">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <h4 class="pb-3 mb-4 font-italic border-bottom">CSS CONCEPTS</h4>
+      <div class="blog-post">
+            <h2 class="blog-post-title">Margin, Border, and Padding</h2>
+            <p class="blog-post-meta text-muted">November 30, 2018 by <a href="natgrant.github.io/index.html">Natalie</a>
+            </p>
+            <p>In this blog post I will be covering the difference between the CSS properties; <code>margin</code>, <code>border</code>, and <code>padding</code>. These properties can be described using a fundamental concept in CSS known as the <strong>box model</strong></p>
+            <hr>
+            <p>Essentially each HTML element can be thought of as a box, and by using CSS we can manipulate how these boxes will be displayed; the box model is an important concept as it allows us to understand the foundation layout and ultimately define the space between elements.</p>
+            <p>The box model consists of four edges; the margin edge, border edge, padding edge & content edge:</p>
+            
+            <img class="box-model img-fluid"  src="https://mdn.mozillademos.org/files/13647/box-model-standard-small.png" alt="box model display" >
+            <p class="font-italic text-muted">The above image was sourced from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model#Box_properties">MDN </a></p>
+            <p><strong>Hint: </strong>you can view the properties of each individual element by navigating to the DOM inspector <span class="text-muted">(If using Chrome on Mac hit command+shift+c or ctrl+shift+c for Windows)</span>. Navigate to Styles and your browser will dispay the margin, border, and padding applied to each element, give it go now!</p>
+            
+            <h3>Margin</h3>
+            <p>The margin encases the entire element, and contains the border, padding, and content. It is transparent, and pushes up against other boxes in the layout. It can be used to create space around an element, outside of the border:</p>
+              <ul>
+                <li>Shorthand property - <code>margin</code></li>
+                <li>Individual properties - <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code></li>
+              </ul>
+                <div class="card mb-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Example</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Setting the margin individually if the margin has four values:</h6>
+                      <code class="card-text">
+                          p .example-one {<br>&nbsp;&nbsp;&nbsp;
+                          margin-top: 50px;<br>
+                          &nbsp;&nbsp;&nbsp;
+                          margin-right: 80px;<br>
+                          &nbsp;&nbsp;&nbsp;
+                          margin-bottom: 80px;<br>
+                          &nbsp;&nbsp;&nbsp;
+                          margin-left: 100px;<br>}
+                          </code>  
+                      <h6 class="text-muted mb-2 mt-2">To shorten the code above you can set the margin using the shorthand property which is specified counter-clockwise (i.e top, right, bottom, left) this will produce the same result as above:</h6>
+                      <code class="card-text">
+                        p .example-two {<br>&nbsp;&nbsp;&nbsp;
+                          margin: 50px 80px 80px 100px;<br>}
+                        </code>
+                    </div>
+                  </div>
+
+            <h3>Border</h3>
+            <p>A border is the area that sits between the outer edge of the padding, and inner edge of the margin, <code>border</code> is the shorthand property which specifies style, width, and color, and allows you to set all four edges at once:</p>
+              <ul>
+                <li>Shorthand property - <code>border</code> i.e. <code>border 2px solid red</code> this code would set a 2 pixel solid red border</li>
+                <li>To set the syle, colour, and thickness individually (this applies to all four sides) - <code>border-style</code>, <code>border-color</code>, <code>border-width</code></li>
+                <li>To set one of three properties, with the sides set individually - <code>border-right-style</code>, <code>border-left-color</code>, <code>border-top-width</code></li>
+              </ul>
+                <div class="card mb-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Example</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Setting the width, style, and colour of all four edges:</h6>
+                    <code class="card-text">
+                        p .example-one {<br>&nbsp;&nbsp;&nbsp;
+                        border-width: 5px;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        border-style: solid;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        border-color: orange;<br>}
+                        </code>  
+                    <h6 class="text-muted mb-2 mt-2">To shorten the code above and if you wish to specify the values to all four edges you can set the border using the shorthand property:</h6>
+                    <code class="card-text">
+                      p .example-two {<br>&nbsp;&nbsp;&nbsp;
+                        border: 5px solid orange;<br>}
+                      </code>
+                    <h6 class="text-muted mb-2 mt-2">Both example-one and example-two will produce the same result:</h6>
+                    <p class="border-example text-center">WOW this is what a 5 pixel solid orange border looks like!</p>
+                  </div>
+                </div>
+
+            <h3>Padding</h3>
+            <p>Padding is similar to margin and is the area between the outer edge of the content box and the inner edge of the border, this is used to generate space around the content of the element:</p>
+              <ul>
+                <li>This layer can be set on all four sides at once using the <code>padding</code> property or one at a time (i.e. using <code>padding-right</code>).</li>   
+              </ul> 
+              <div class="card mb-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Example</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Setting the padding individually if the padding has four values:</h6>
+                    <code class="card-text">
+                        div .example-one {<br>&nbsp;&nbsp;&nbsp;
+                        padding-top: 50px;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        padding-right: 80px;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        padding-bottom: 80px;<br>
+                        &nbsp;&nbsp;&nbsp;
+                        padding-left: 100px;<br>}
+                        </code>  
+                    <h6 class="text-muted mb-2 mt-2">To shorten the code above you can set the padding using the shorthand property which is specified counter-clockwise (i.e top, right, bottom, left):</h6>
+                    <code class="card-text">
+                      div .example-two {<br>&nbsp;&nbsp;&nbsp;
+                        padding: 50px 80px 80px 100px;<br>}
+                      </code>
+                  </div>
+                </div>
+      </div>
+      </div>
+    <!--Resources/sidebar-->
+    <aside class="col-md-4 blog-sidebar">
+      <div class="card mb-4">
+        <img class="card-img-top" src="../images/hannah-dickens-1073158-unsplash.jpg" alt="Laptop">
+        <div class="card-body">
+          <h5 class="card-title">Want to learn more?</h5>
+          <p class="card-text">Visit the link below for more info on margin, border, and padding, and the box model!</p>
+          <a href="https://www.w3schools.com/css/css_boxmodel.asp" class="btn btn-info" target="_blank">The CSS Box Model</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="../images/florian-olivo-1169467-unsplash.jpg" alt="Code image">
+        <div class="card-body">
+          <h5 class="card-title">Resources</h5>
+          <p class="card-text">Mozilla Developers Network is a super useful resource for developers & if you haven't bookmarked this site you should head over and check it out now</p>
+          <a href="https://developer.mozilla.org/en-US/" class="btn btn-primary" target="_blank">Take me to MDN</a>
+        </div>
+      </div>
+    </aside>
+
+    </div>
+  </div>
+  </main>
+
+
+<!--Footer-->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com/natalie.grant.94"><i class="fab fa-facebook-square"> </i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/atnatgrant/?hl=en"><i class="fab fa-instagram"> </i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/natgrant"><i class="fab fa-github"> </i></a></li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- jQuery/Popper.js/Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for Navbar Scroll -->
+  <script>
+    $(function () {
+    $(document).scroll(function(){
+    var $nav = $("#mainNav");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+
+</body>
