@@ -1,7 +1,15 @@
+/*Styles for all*/
 body {
     background: #F9C6BD;
     font-family: 'Amatic SC', cursive;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.box-model {
+    display: block; 
+    height: 720px; 
+    margin: 0px auto; 
+    width: 967px;
 }
 
 .info h2 {
@@ -63,13 +71,62 @@ body {
 
 .navbar.scrolled {
     background: #ec4424;
-    transition: 1s;
+    transition: 500ms;
 }
 
 @media (max-width: 1200px) {
     #headingGroup h1 {
         font-size: 3rem;
     }
+}
+
+/*Styles for Technical Blog*/
+
+#technical-blog {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#technical-blog .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.bg-light {
+    background-color: #f5fffa!important;
+}
+
+#technical-blog .jumbotron {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    background-color: #ec4424;
+    color: #ffffff;
+    margin-top: 80px;
+    border-bottom: 80px;
+}
+
+#technical-blog .border-example {
+    border: 5px solid orange;
+}
+
+.blog-sidebar {
+    font-size: 75%;
+    margin-top: 2rem;
+}
+
+#technical-blog .jumbotron .lead {
+    font-weight: bold
+}
+
+.card-text {
+    color: black;
+    background-color: white;
+}
+
+code {
+    font-family: consolas,"Liberation Mono",courier,monospace;
+    color:#ffffff;
+    background-color: rgb(110, 98, 98)
 }
 
 
