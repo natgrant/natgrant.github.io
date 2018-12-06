@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/styles/main.css" type="text/css">
+
+  <!--Imported Font-->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans:300,400" rel="stylesheet">
+
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <title>Javascript Basics</title>
+
+</head>
+
+<body id="technical-blog">
+
+  <!--Navigation station-->
+  <nav id="mainNav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="https://natgrant.github.io/index.html" class="navbar-brand">NATCHAT</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle the navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/index.html#about-me" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technical</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sprint2-technical.html">CSS Concepts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sprint1-cultural.html">Sprint 1</a>
+              <a class="dropdown-item" href="sprint2-cultural.html">Sprint 2</a>
+              <a class="dropdown-item" href="sprint3-cultural.html">Sprint 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <!--Header/Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Let's Get Technical</h1>
+      <p class="lead">Find technical concepts below, explained in a not-so-technical way</p>
+    </div>
+  </div>
+
+  <!--Main content/blog 1-->
+  <main role="main">
+    <div class="container px-0 mb-5">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <h4 class="pb-3 mb-4 font-italic border-bottom">JAVASCRIPT BASICS</h4>
+        <div class="blog-post">
+            <h2 class="blog-post-title">HTML, and CSS and JavaScript</h2>
+            <p class="blog-post-meta text-muted">December 06, 2018 by <a href="/index.html#about-me">Natalie</a>
+            </p>
+            <p>In this post I will go over some of the basic concepts surrounding JavaScript.</p>
+            <hr>
+            <p>What do HTML, CSS, and JavaScript have in common with a birthday cake? Well th, actually alot! HTML is similar to the structure of the cake, CSS is the icing and decorations (makes things look good), and JavaScript can be thought of as the candles on top that you light then blow out (i.e. the interactivity) without CSS and Javascript it would be a pretty sad cake!</p>
+        
+            <h3>Control Flow & Loops</h3>
+            <p>Control flow is the order in which functions are executed and evaluated when Javascript is running, it's how we contol the way our code runs</p>
+            <p>A loop is a type of function which will run over and over to infinity or until a certain condition is met. In JavaScript there are two main types of loops:</p>
+              <ul>
+                <li><strong>While Loops:</strong> Repeats code WHILE a condition is true</li>
+                <li><strong>For Loops:</strong> Another way to repeat code for a specified number of times</li>
+              </ul>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Example</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">We're all stuck in some type of loop:</h6>
+                  <p class="card-text">Carrying on with the cake theme! If you wish to bake a cake for your best friends birthday you would follow a recipe and keep repeating the steps of the recipe, i.e. Mix half a cup of sugar and 100 grams of butter together until creamed, add two eggs beating after each addition, and so on until you have finally completed the recipe, you would not stop until the cake is out of the oven - similar to a loop (I.e. While the cake is incomplete, continue with steps in recipe). The control flow controls the way we carry out the steps to ensure we complete the recipe as intended (sometimes human error misses a step on the loop and the cake turns to custard, thank goodness for computers). </p>  
+                </div>
+              </div>
+
+            <h3>The DOM</h3>
+            <p>The Document Object Model is the interface between JavaScript and HTML + CSS. When we load HTML in the browser, the browser is displaying things to us in a certain way, but behind the scenes is actually busy making a model of every single element with a JavaScript object. The DOM is a hierarchical structure, represented as nodes and objects, effectively enabling programming languages (like JavaScript) to connect to the page and dynamically access and update the content on it.</p>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Example</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Interacting with the DOM</h6>
+                <p class="card-text">To interact with the DOM we can select an element and manipulate it by writing JavaScript code, for example we may want to select our h1 element and can do this using the <code>.querySelector</code> which returns an object that represents the h1</p>
+                <p><code>var h1 = document.querySelector("h1);</code></p>  
+                <p><code>h1.style.color = "orange";</code></p>  
+                <p class="text-muted">The browser will see that we have changed the h1 property to orange and automatically updates that colour to reflect the change on the h1 element</p>
+              </div>
+            </div>
+
+            <h3>Arrays & Objects</h3>
+            <p>An array is used to store a list of data, when adding things to an array there is a specific order – every item is bound to an index which we refer to it by (i.e. item 1 = index 0, item 2 – index 1 and so on). This index starts at zero, as Javascript starts counting from zero, not one.</p>
+            <p>An object differs as it is not a list, there is no particular order (imagine things floating around inside a gelatinous blob – known as key-value pairs). Objects are like dictionaries: you look something up based on a key, and get a corresponding value. The key to accessing data from objects is to go one step at a time, and then burrow down the data. </p>
+            <p>Behind the scenes an array is still an object - just a special kind. An array still has key value pairs however the key is 0 to number of items in the array. To access data from an array we have to know the index the item is bound to.</p>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Example</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Accessing data from an array:</h6>
+                <p class="card-text"><code>var cats = ["Kitty", "Sofia", "Mia"];</code></p>  
+                <p><code>cats[1]</code><span class="text-muted"> will return:</span></p> 
+                <p><code style="color:red;">"Sofia"</code></p>  
+                <h6 class="card-subtitle mb-2 text-muted">Accessing data from an object:</h6>
+                <p class="card-text"><code>var cat = {<br> 
+                  &nbsp;&nbsp;&nbsp;&nbsp; name: "Sofia",<br> 
+                  &nbsp;&nbsp;&nbsp;&nbsp; breed: "Maine Coon",<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; age: 8<br>}</code></p>  
+                <p><code>cat ["name"]</code><span class="text-muted"> will return:</span></p> 
+                <p><code style="color:red;">"Sofia"</code></p>  
+              </div>
+            </div>
+
+            
+            <h3>Functions</h3>
+            <p>Functions are like recipes – they take a list of instructions and condense them – this stops code from being repetitive, keeping it DRY(Don't Repeat Yourself) in turn making code easier to maintain. Basically a function is a wrapper for code, allowing you to group statements together, in turn making code reusable.</p>
+            <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">Example</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Basic Function:</h6>
+                <p class="card-text"><code>function sayHello() {</code></p>  
+                <p><code> &nbsp;&nbsp;&nbsp;&nbsp;alert("Hello World!");<br>}</code></p> 
+                <p><code>sayHello();</code></p>
+                <p><span class="text-muted">This will call the function (try it in your browser, it's fun!)</span></p>  
+              </div>
+            </div>
+      </div>
+      </div>
+
+    <!--Resources/sidebar-->
+    <aside class="col-md-4 blog-sidebar">
+      <div class="card mb-4">
+        <img class="card-img-top" src="../images/hannah-dickens-1073158-unsplash.jpg" alt="Laptop">
+        <div class="card-body">
+          <h5 class="card-title">Want to learn more?</h5>
+          <p class="card-text">Visit the link below for more info on margin, border, and padding, and the box model!</p>
+          <a href="https://www.w3schools.com/css/css_boxmodel.asp" class="btn btn-info" target="_blank">The CSS Box Model</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="../images/florian-olivo-1169467-unsplash.jpg" alt="Code image">
+        <div class="card-body">
+          <h5 class="card-title">Resources</h5>
+          <p class="card-text">Mozilla Developers Network is a super useful resource for developers & if you haven't bookmarked this site you should head over and check it out now</p>
+          <a href="https://developer.mozilla.org/en-US/" class="btn btn-primary" target="_blank">Take me to MDN</a>
+        </div>
+      </div>
+    </aside>
+
+    </div>
+  </div>
+  </main>
+
+
+<!--Footer-->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com/natalie.grant.94"><i class="fab fa-facebook-square"> </i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/atnatgrant/?hl=en"><i class="fab fa-instagram"> </i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/natgrant"><i class="fab fa-github"> </i></a></li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- jQuery/Popper.js/Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for Navbar Scroll -->
+  <script>
+    $(function () {
+    $(document).scroll(function(){
+    var $nav = $("#mainNav");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+
+</body>
