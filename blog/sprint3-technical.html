@@ -81,7 +81,7 @@
             <p>A loop is a type of function which will run over and over to infinity or until a certain condition is met. In JavaScript there are two main types of loops:</p>
               <ul>
                 <li><strong>While Loops:</strong> Repeats code WHILE a condition is true</li>
-                <li><strong>For Loops:</strong> Another way to repeat code for a specified number of times</li>
+                <li><strong>For Loops:</strong> Another way to repeat code FOR a specified number of times</li>
               </ul>
               <div class="card mb-2">
                 <div class="card-body">
@@ -97,10 +97,10 @@
               <div class="card-body">
                 <h5 class="card-title">Example</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Interacting with the DOM</h6>
-                <p class="card-text">To interact with the DOM we can select an element and manipulate it by writing JavaScript code, for example we may want to select our h1 element and can do this using the <code>.querySelector</code> which returns an object that represents the h1</p>
-                <p><code>var h1 = document.querySelector("h1);</code></p>  
-                <p><code>h1.style.color = "orange";</code></p>  
-                <p class="text-muted">The browser will see that we have changed the h1 property to orange and automatically updates that colour to reflect the change on the h1 element</p>
+                <p class="card-text">To interact with the DOM we can select an element and manipulate it by writing JavaScript code, for example we may want to select our h1 element and can do this using the .querySelector which returns an object that represents the h1</p>
+                <code class="card-text">var h1 = document.querySelector("h1);<br>
+                h1.style.color = "orange";</code> 
+                <p class="text-muted">The browser will see that we have changed the h1 property to orange and automatically updates that colour to reflect the change on the h1 element - right click and hit 'Inspect' to bring up the DevTools to try it for yourself!</p>
               </div>
             </div>
 
@@ -112,16 +112,16 @@
               <div class="card-body">
                 <h5 class="card-title">Example</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Accessing data from an array:</h6>
-                <p class="card-text"><code>var cats = ["Kitty", "Sofia", "Mia"];</code></p>  
-                <p><code>cats[1]</code><span class="text-muted"> will return:</span></p> 
-                <p><code style="color:red;">"Sofia"</code></p>  
+                <code class="card-text">var cats = ["Kitty", "Sofia", "Mia"];<br>
+                cats[1]<span class="text-muted"> will return:</span><br>
+                <span style="color:red;">"Sofia"</span></code> 
                 <h6 class="card-subtitle mb-2 text-muted">Accessing data from an object:</h6>
-                <p class="card-text"><code>var cat = {<br> 
+                <code class="card-text">var cat = {<br> 
                   &nbsp;&nbsp;&nbsp;&nbsp; name: "Sofia",<br> 
                   &nbsp;&nbsp;&nbsp;&nbsp; breed: "Maine Coon",<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp; age: 8<br>}</code></p>  
-                <p><code>cat ["name"]</code><span class="text-muted"> will return:</span></p> 
-                <p><code style="color:red;">"Sofia"</code></p>  
+                  &nbsp;&nbsp;&nbsp;&nbsp; age: 8<br>}<br>
+                  cat ["name"]<span class="text-muted"> will return:</span><br> 
+                 <span style="color:red;">"Sofia"</span></code>
               </div>
             </div>
 
@@ -132,10 +132,10 @@
             <div class="card-body">
                 <h5 class="card-title">Example</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Basic Function:</h6>
-                <p class="card-text"><code>function sayHello() {</code></p>  
-                <p><code> &nbsp;&nbsp;&nbsp;&nbsp;alert("Hello World!");<br>}</code></p> 
-                <p><code>sayHello();</code></p>
-                <p><span class="text-muted">This will call the function (try it in your browser, it's fun!)</span></p>  
+                <code class="card-text">function sayHello() {<br>  
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("Hello World!");<br>}<br> 
+                sayHello();</code>
+                <p class="text-muted">This will call the function (try it in your browser, it's fun!)</p>  
               </div>
             </div>
       </div>
