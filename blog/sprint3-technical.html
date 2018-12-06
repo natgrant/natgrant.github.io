@@ -83,13 +83,8 @@
                 <li><strong>While Loops:</strong> Repeats code WHILE a condition is true</li>
                 <li><strong>For Loops:</strong> Another way to repeat code FOR a specified number of times</li>
               </ul>
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h5 class="card-title">Example</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">We're all stuck in some type of loop:</h6>
-                  <p class="card-text">Carrying on with the cake theme! If you wish to bake a cake for your best friends birthday you would follow a recipe and keep repeating the steps of the recipe, i.e. Mix half a cup of sugar and 100 grams of butter together until creamed, add two eggs beating after each addition, and so on until you have finally completed the recipe, you would not stop until the cake is out of the oven - similar to a loop (I.e. While the cake is incomplete, continue with steps in recipe). The control flow controls the way we carry out the steps to ensure we complete the recipe as intended (sometimes human error misses a step on the loop and the cake turns to custard, thank goodness for computers). Are you hungry now? </p>  
-                </div>
-              </div>
+              <h5>Example of a real life loop:</h5>
+              <p>Carrying on with the cake theme! If you wish to bake a cake for your best friends birthday you would follow a recipe and keep repeating the steps of the recipe, i.e. Mix half a cup of sugar and 100 grams of butter together until creamed, add two eggs beating after each addition, and so on until you have finally completed the recipe, you would not stop until the cake is out of the oven - similar to a loop (I.e. While the cake is incomplete, continue with steps in recipe). The control flow controls the way we carry out the steps to ensure we complete the recipe as intended (sometimes human error misses a step on the loop and the cake turns to custard, thank goodness for computers). Are you hungry now? </p>
 
             <h3>The DOM</h3>
             <p>The Document Object Model is the interface between JavaScript and HTML + CSS. When we load HTML in the browser, the browser is displaying things to us in a certain way, but behind the scenes is actually busy making a model of every single element with a JavaScript object. The DOM is a hierarchical structure, represented as nodes and objects, effectively enabling programming languages (like JavaScript) to connect to the page and dynamically access and update the content on it.</p>
@@ -100,7 +95,7 @@
                 <p class="card-text">To interact with the DOM we can select an element and manipulate it by writing JavaScript code, for example we may want to select our h1 element and can do this using the .querySelector which returns an object that represents the h1</p>
                 <code class="card-text">var h1 = document.querySelector("h1);<br>
                 h1.style.color = "orange";</code> 
-                <p class="text-muted">The browser will see that we have changed the h1 property to orange and automatically updates that colour to reflect the change on the h1 element - right click and hit 'Inspect' to bring up the DevTools to try it for yourself!</p>
+                <p class="text-muted pt-2">The browser will see that we have changed the h1 property to orange and automatically updates that colour to reflect the change on the h1 element - right click and hit 'Inspect' to bring up the DevTools to try it for yourself!</p>
               </div>
             </div>
 
@@ -115,7 +110,7 @@
                 <code class="card-text">var cats = ["Kitty", "Sofia", "Mia"];<br>
                 cats[1]<span class="text-muted"> will return:</span><br>
                 <span style="color:red;">"Sofia"</span></code> 
-                <h6 class="card-subtitle mb-2 text-muted">Accessing data from an object:</h6>
+                <h6 class="card-subtitle mb-2 text-muted pt-2">Accessing data from an object:</h6>
                 <code class="card-text">var cat = {<br> 
                   &nbsp;&nbsp;&nbsp;&nbsp; name: "Sofia",<br> 
                   &nbsp;&nbsp;&nbsp;&nbsp; breed: "Maine Coon",<br>
@@ -135,7 +130,7 @@
                 <code class="card-text">function sayHello() {<br>  
                 &nbsp;&nbsp;&nbsp;&nbsp;alert("Hello World!");<br>}<br> 
                 sayHello();</code>
-                <p class="text-muted">This will call the function (try it in your browser, it's fun!)</p>  
+                <p class="text-muted pt-2">This will call the function (try it in your browser, it's fun!)</p>  
               </div>
             </div>
       </div>
