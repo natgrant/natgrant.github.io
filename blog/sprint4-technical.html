@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/styles/main.css" type="text/css">
+
+  <!--Imported Font-->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans:300,400" rel="stylesheet">
+
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <title>Problem Solving</title>
+
+</head>
+
+<body id="technical-blog">
+
+  <!--Navigation station-->
+  <nav id="mainNav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="https://natgrant.github.io/index.html" class="navbar-brand">NATCHAT</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle the navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/index.html#about-me" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technical</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sprint2-technical.html">CSS Concepts</a>
+              <a class="dropdown-item" href="sprint3-technical.html">JavaScript Basics</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sprint1-cultural.html">Sprint 1</a>
+              <a class="dropdown-item" href="sprint2-cultural.html">Sprint 2</a>
+              <a class="dropdown-item" href="sprint3-cultural.html">Sprint 3</a>
+              <a class="dropdown-item" href="sprint4-cultural.html">Sprint 3</a>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <!--Header/Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Let's Get Technical</h1>
+      <p class="lead">Find technical concepts below, explained in a not-so-technical way</p>
+    </div>
+  </div>
+
+  <!--Main content/blog 1-->
+  <main role="main">
+    <div class="container px-0 mb-5">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <h4 class="pb-3 mb-4 font-italic border-bottom">PROBLEM SOLVING TECHNIQUES</h4>
+        <div class="blog-post">
+            <h2 class="blog-post-title">Approaching Problem Solving</h2>
+            <p class="blog-post-meta text-muted">December 14, 2018 by <a href="/index.html#about-me">Natalie</a>
+            </p>
+            <p>In this post I will discuss the use of problem solving techniques to overcome blocks</p>
+            <hr>
+
+            <h3>Blocked on a Simple Problem:</h3>
+            <p>While attempting to solve one of the kata challenges, I became blocked on a simple prolem, which was syntax related. </p>
+            <p>I was trying to pass the final deBee test using the<code>.toUpperCase()</code> method.</p> 
+            <p>I was using the built-in method <code>filter</code> and was passing the test to remove 'buzz' words.</p>
+
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Test - Pass</h5>
+                <h6 class="card-subtitle mb-2 text-muted">//deBee should return a string where the word buzz has been removed</h6>
+                <code class="card-text">
+                const filterBuzz = words.filter(word => word != "buzz");
+                </code> 
+              </div>
+            </div>
+
+            <p>To pass the first test did involve understanding the use of the <code>filter</code> method, however when I ran the test again with the <code>.toUpperCase</code> method I could not figure out why it was working:</p>
+
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Test - Fail</h5>
+                <h6 class="card-subtitle mb-2 text-muted">//deBee should return a string where the word buzz has been removed, regardless of capitalization.</h6>
+                <code class="card-text">
+                const filterBuzz = words.filter(word => word.toUpperCase != "BUZZ");
+                </code> 
+              </div>
+            </div>
+
+            <p>This failed test was due to syntax - forgetting the ( ) on the method <code>.toUpperCase()</code> the error message here was not helpful so I had to Google the method, and then tried it out in my code editior and found the problem</p>
+            <p>I already knew syntax was important, however from this I did learn to be more careful when writing the functions to ensure syntax is correct.</p>
+
+            <h3>Elegant Problem Solving</h3>
+            <p>My most elegant attempt at solving a problem was during the JS Gradebook challenge, this is where I combined a few different problem solving techniques including:</p>
+              <ul>
+                <li>Pseudocode</li>
+                <li>Googling</li>
+                <li>Trying something</li>
+                <li>Reading error messages</li>
+              </ul>
+            <p>During this exercise I felt that, because of these techniques my problem solving flow had vastly improved. I also began to feel more confident using Javascript during this challenge.  </p>
+
+            <h3>Problem Solving Techniques</h3>
+            <ul>
+              <li><strong>Pseudocode</strong><text-muted>(med) - I have only just discovered pseudocode, and definitely rely on it in order to solve problems – if I don’t use it, it feels like I am trying to open a window which is glued shut.</li>
+              <li><strong>Trying something</strong> (high) – When approaching problems, I don’t like to feel as if I am getting nowhere, so I will try different things until I understand where I am going wrong, or better yet – solve the problem! </li>
+              <li><strong>Rubber ducky method</strong> (med) – I am usually studying in a public space, so I cannot exactly start talking to an inanimate object.. or can I? I have not used this method much, but know it does yield results. </li>
+              <li><strong>Reading error messages</strong> </strong>(med) – I find error messages useful, especially for syntax errors, not so much for more complex problems.</li>
+              <li><strong>Console.logging</strong> (med) – This helps a lot with debugging and understanding code, and I am reasonably confident with the use of console.log() </li>
+              <li><strong>Googling</strong> (high) – Googling is great, when I know what it is I am looking for! And additionally it helps to go over methods/functions etc. and check syntax. Big fan of Google, I cannot imagine what it would have been like to be a programmer in the 90’s.</li>
+              <li><strong>Asking your peers/coaches for help</strong> (med) – This is an approach I have seldom utilised, however I think my confidence with this will increase during Bootcamp, as I am starting to find the challenges more difficult.</li>
+              <li><strong>Improving your process with reflection</strong> (high) – I really do find reflecting on challenges, and learning, to be a useful practice. It can help solidify the information gained, and highlight any gaps in knowledge – I use this one a lot. </li>
+            </ul>
+
+
+
+
+    <!--Resources/sidebar-->
+    <aside class="col-md-4 blog-sidebar">
+      <div class="card mb-4">
+        <img class="card-img-top" src="../images/jannis-brandt-1152771-unsplash.jpg" alt="Laptop">
+        <div class="card-body">
+          <h5 class="card-title">Want to learn more?</h5>
+          <p class="card-text">Visit the link below for more info on Array prototypes</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype" class="btn btn-info" target="_blank">More Info</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="../images/florian-olivo-1169467-unsplash.jpg" alt="Code image">
+        <div class="card-body">
+          <h5 class="card-title">Resources</h5>
+          <p class="card-text">Mozilla Developers Network is a super useful resource for developers & if you haven't bookmarked this site you should head over and check it out now</p>
+          <a href="https://developer.mozilla.org/en-US/" class="btn btn-primary" target="_blank">Take me to MDN</a>
+        </div>
+      </div>
+    </aside>
+
+    </div>
+  </div>
+  </main>
+
+
+<!--Footer-->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com/natalie.grant.94"><i class="fab fa-facebook-square"> </i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/atnatgrant/?hl=en"><i class="fab fa-instagram"> </i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/natgrant"><i class="fab fa-github"> </i></a></li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- jQuery/Popper.js/Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for Navbar Scroll -->
+  <script>
+    $(function () {
+    $(document).scroll(function(){
+    var $nav = $("#mainNav");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+
+</body>
